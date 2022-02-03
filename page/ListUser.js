@@ -2,6 +2,7 @@ import {Button, Text, View} from 'react-native';
 import React, {useState} from 'react';
 
 export const ListUser = ({navigation}) => {
+  // tableau de users a vide de base 
   const [users, setUser] = useState([]);
 
   const addUser = (newUser) => {
