@@ -2,7 +2,7 @@ import {Button, Text, View} from 'react-native';
 import React, {useState} from 'react';
 
 export const ListUser = ({navigation}) => {
-  // tableau de users a vide de base 
+  // tableau de users initialise a vide a sa creation 
   const [users, setUser] = useState([]);
 
   const addUser = (newUser) => {
@@ -13,7 +13,7 @@ export const ListUser = ({navigation}) => {
   const handleAddUser = () => {
     navigation.navigate("AddUser", {addUser: addUser});
   };
-// mettre tableau users a vide 
+// mettre le tableau users a vide pour effacer la liste 
   const handleClear = () => {
     setUser([]);
         console.warn('tous les users supprimes');
@@ -21,17 +21,17 @@ export const ListUser = ({navigation}) => {
 
   return (
     <View>
-    {/* .map pr boucler sur le tableau des users et les afficher */}
+    {/* .map pr boucler sur le tableau des users et les afficher tous sur la page*/}
       {users.map(user => (
         <View>
           <Text>
-            nom: {user.nom} et prenom: {user.prenom}
+            Le nom de l'utilisateur est : {user.nom} et le prenom de l'utilisateur est: {user.prenom}
           </Text>
         </View>
       ))}
       {/* boutons pour ajouter et effacer utilisers  */}
-      <Button title="Ajouter User" onPress={handleAddUser} />
-      <Button title="Effacer la liste user " onPress={handleClear} />
+      <Button title="Ajouter" onPress={handleAddUser} />
+      <Button title="Effacer users" onPress={handleClear} />
     </View>
   );
 };
