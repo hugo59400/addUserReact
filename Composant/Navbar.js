@@ -2,23 +2,30 @@ import {Pressable, StyleSheet, Text, View,Button} from 'react-native';
 import React from 'react';
 
 export const Navbar = ({navigation}) => {
-// bouton go back Button appel 
+// handleBack est appele sur le bouton retour en arriere 
    const handleBack = () => {
        navigation.goBack();
     }
+   //fonction qui redirige vers page home avec un parametre nom affiche dans cette page 
     const handleHome = () => {
         navigation.navigate("Home",{nom:"hugo"})
     }
+    //fonction qui redirige vers page MonCompte
     const handleMonCompte = () => {
         navigation.navigate("MonCompte")
     }
+        //fonction qui redirige vers page Recette
+
     const handleRecette = () => {
         navigation.navigate("Recette")
     }
+    
 
       const handleAddUser = () => {
         navigation.navigate("AddUser")
     }
+      
+      // fonction qui redirige vers page qui ajoute user et liste les users 
          const handleListUser = () => {
         navigation.navigate("ListUser")
     }
@@ -68,7 +75,7 @@ export const Navbar = ({navigation}) => {
         <Text>Add and  List users </Text>
       </Pressable>
      
-      <Button title="go back " onPress={handleBack}/>
+      <Button title="retour en arriere" onPress={handleBack}/>
     </View>
   );
 };
