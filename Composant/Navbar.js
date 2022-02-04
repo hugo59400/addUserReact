@@ -36,7 +36,7 @@ export const Navbar = ({navigation}) => {
       <Text></Text>
 //       <Pressable
 //         style={({pressed}) => ({
-//           backgroundColor: pressed ? '#ff0000' : '#00ffff',
+   //           backgroundColor: pressed ? '#ff0000' : '#00ffff',
 //         })}
 //         onPress={handleHome}>
 //         <Text>Page Home</Text>
