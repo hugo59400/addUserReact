@@ -34,29 +34,30 @@ export const Navbar = ({navigation}) => {
   return (
     <View>
       <Text></Text>
-//       <Pressable
-//         style={({pressed}) => ({
-   //           backgroundColor: pressed ? '#ff0000' : '#00ffff',
-//         })}
-//         onPress={handleHome}>
-//         <Text>Page Home</Text>
-//       </Pressable>
 
-//       <Pressable
-//         style={({pressed}) => ({
-//           backgroundColor: pressed ? '#ff0000' : '#00ffff',
-//         })}
-//         onPress={handleMonCompte}>
-//         <Text>Page Mon compte</Text>
-//       </Pressable>
+      {/* <Pressable
+        style={({pressed}) => ({
+          backgroundColor: pressed ? '#ff0000' : '#00ffff',
+        })}
+        onPress={handleHome}>
+        <Text>Page Home</Text>
+      </Pressable>
 
-//       <Pressable
-//         style={({pressed}) => ({
-//           backgroundColor: pressed ? '#ff0000' : '#00ffff',
-//         })}
-//         onPress={handleRecette}>
-//         <Text>Page Recette</Text>
-//       </Pressable>
+      <Pressable
+        style={({pressed}) => ({
+          backgroundColor: pressed ? '#ff0000' : '#00ffff',
+        })}
+        onPress={handleMonCompte}>
+        <Text>Page Mon compte</Text>
+      </Pressable>
+
+      <Pressable
+        style={({pressed}) => ({
+          backgroundColor: pressed ? '#ff0000' : '#00ffff',
+        })}
+        onPress={handleRecette}>
+        <Text>Page Recette</Text>
+      </Pressable> */}
 
 
          {/* <Pressable
